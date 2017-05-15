@@ -1,56 +1,50 @@
 body {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 100;
 	width: 100vw;
 }
 nav {
-	padding-left: 20px;
+	padding-left: 10px;
 	position: fixed;
-	margin-top: -600px;
+	margin-top: 90px;
 }
 a {
 	text-decoration: none;
-	color: darkblue;
+	color: white;
 	-o-transition:.3s;
     -ms-transition:.3s;
     -moz-transition:.3s;
     -webkit-transition:.3s;
     transition:.3s;
     cursor: pointer;
+    font-weight: 100;
 }
 a:hover {
-	color: darkred;
+	color: lightblue;
 }
 #home {
-	background:
-	linear-gradient(
-		  rgba(255, 255, 255, 0.58), 
-		  rgba(255, 255, 255, 0.3)
-	  ),
-	url('images/BGcolors.png');
-	background-size: cover;
-    background-attachment: fixed;
+	background-size: contain;
+    background-attachment: scroll;
     background-position: top;
 	height: 95vh;
 	-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
  	-moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
   	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
 }
-#home-banner {
-	font-family: 'Meddon', cursive;
-	font-size: 15em;
-	overflow: hidden;
-	color: rgba(206, 207, 253, 0.17);
-	line-height: 1.25;
+.thick {
+	font-weight: 300;
 }
 #page-head {
-	font-family: 'Meddon', cursive;
-	font-size: 70px;
-	padding-left: 20px;
+	font-size: 110px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding-left: 13%;
+	line-height: 6.3;
 }
 .social-icon {
 	width: 30px;
-	margin-bottom: 10px;
 	filter: opacity(25%);
 	-o-transition:.3s;
     -ms-transition:.3s;
@@ -64,84 +58,50 @@ a:hover {
 .social-icon:hover, .footer-social:hover {
 	filter: opacity(95%);
 }
-.nav-item {
-	font-weight: 300;
-	font-size: 20px;
-	padding-left: 10px;
+#nav-contain {
+	width: 100%;
+	height: 40px;
+	padding-top: 15px;
+	margin-top: 0;
 }
-#nav-links {
-	margin-top: -75px;
+#nav-contain.scrolled {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transition: background-color 200ms linear;
+}
+.nav-item {
+	font-size: 20px;
+}
+.slash {
+	color: white;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+#main-nav {
+	padding-left: 15px;
 }
 #small-nav {
-	width: 100%;
+	width: 50%;
     text-align: right;
-    margin-left: 338%;
-    margin-top: -30px;
+    margin-left: 0;
+    margin-right: 20px;
+    float: right;
+    margin-top: -27px;
 }
 #socials {
-	margin-top: 0px;
-}
-#single2 {
-	margin: auto;
-	margin-top: 80px;
-    width: 1%;
-	-webkit-animation-name: single2;
-	animation-name: single2;
-	-webkit-animation-duration: 2s;
-	animation-duration: 2s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-}
-
-#single2 .scroll-arrow-container {
-	height: 20px;
-	width: 20px;
-	position: relative;
-}
-
-#single2 span {
-	position: absolute;
-	height: 4px;
-	width: 30px;
-	background-color: #ffffff;
-}
-
-#single2 span.arrow-left {
-	-webkit-transform: rotate(30deg);
-	-ms-transform: rotate(30deg);
-	transform: rotate(30deg);
-	left: -17px;
-}
-
-#single2 span.arrow-right {
-	-webkit-transform: rotate(-30deg);
-	-ms-transform: rotate(-30deg);
-	transform: rotate(-30deg);
-	right: -17px;
-}
-
-@-webkit-keyframes single2 {
-	0% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-		opacity: 1;
-	}
-	100% {
-		-webkit-transform: translateY(20px);
-		transform: translateY(20px);
-		opacity: 0;
-	}
+	width: 100%;
+	text-align: center;
+	margin-top: -280px;
 }
 #news {
 	height: 50vh;
 	background:
 	linear-gradient(
-		  rgba(255, 255, 255, 0.35), 
-		  rgba(255, 255, 255, 0.35)
-	  ),
+		  rgba(255, 255, 255, 0.1),
+		  rgba(255, 255, 255, 0.9)
+	),
 	url('images/LeighLiamcolor.png');
 	background-size: cover;
-    background-position: 0px -90px;
+    background-position: top;background-attachment: fixed;
     -webkit-box-shadow: inset 0px 9px 25px -18px black;
  	-moz-box-shadow: inset 0px 9px 25px -18px black;
   	box-shadow: inset 0px 9px 25px -18px black;
@@ -152,99 +112,105 @@ a:hover {
 	text-align: center;
 	font-weight: 300;
 	font-size: 26px;
-	color: darkred;
 	margin: 0;
 }
-.white {
-	color: white
+#check {
+	color: #2e4562;
+	font-weight: 100;
 }
 #news-title {
-	font-family: 'Meddon', cursive;
-	font-size: 70px;
+	font-size: 120px;
+	-o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+	color: #2e4562;
+}
+#news-title:hover {
+	color: lightblue;
 }
 #ll-socials {
 	width: 150px;
 	margin: auto;
-	margin-top: -20px;
 }
-#media {
-	height: 92vh;
-	background:  
-    /*linear-gradient(
-      rgba(255, 255, 255, 0.95), 
-      rgba(255, 255, 255, 0.95)
-    ),
-    url('images/headphones.png');
-    background-size: cover;
-  	background-attachment: fixed;
-  	background-position: 0px -90px;*/
-	padding-top: 50px;
+#music-head-contain, #bio-head-contain {
+	height: 600px;
+	-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
+ 	-moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
+  	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
+}
+#music {
+	height: 160vh;
 	-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
  	-moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
   	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
 }
 #soundcloud {
-	text-align: right;
-	margin-right: 2%;
-	margin-left: 1%;
+	margin-top: 300px;
 }
 #soundcloud, #youtube {
-	width: 48%;
-	display: inline-block;
-}
-.media-title {
-	padding-top: 5px;
-	padding-bottom: 10px;
-	font-size: 55px;
-	color: darkred;
-	font-weight: 300;
-}
-#and {
-	font-family: 'Meddon', cursive;
-	font-size: 60px;
-	color: rgba(0, 0, 139, 0.21);
 	width: 100%;
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: -180px;
-	padding-top: 45px;
+	margin: auto;
 }
+#scroll-out {
+	position: fixed;
+    top: 200px;
+    z-index: -10;
+    width: 100%;
+    margin: auto;
+}
+#music-title, #bio-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 600px;
+	color: rgba(173, 216, 230, 0.65);
+	font-weight: 100;
+	z-index: -100;
+	overflow: hidden;
+}
+.more-link {
+	width: 100%;
+	height: 50px;
+	font-size: 24px;
+	background-color: #26475f;
+	color: white;
+	cursor: pointer;
+	font-weight: 100;
+	border: none;
+	padding-top: 0;
+	margin-top: -3px;
+}
+
 #about {
 	height: 90vh;
 	background:  
     linear-gradient(
-      rgba(136, 148, 212, 0.64), 
-      rgba(136, 148, 212, 0.64)
+      rgba(4, 33, 62, 0.64), 
+      rgba(4, 33, 62, 0.64)
     ),
-    url('images/closeup.png');
+    url('images/aboutBG.png');
     background-size: cover;
   	background-attachment: fixed;
-  	background-position: 0px -90px;
   	-webkit-box-shadow: inset 0px 9px 25px -18px black;
  	-moz-box-shadow: inset 0px 9px 25px -18px black;
   	box-shadow: inset 0px 9px 25px -18px black;
 }
-#about-banner {
-	font-family: 'Meddon', cursive;
-	font-size: 4.5em;
-	overflow: hidden;
-	color: darkblue;
-	line-height: 4;
-	padding-left: 40px;
-}
 #about-text {
 	color: white;
-	font-size: 20px;
-	font-weight: 300;
-	width: 50%;
+	font-size: 28px;
+	font-weight: 100;
+	width: 60%;
 	margin-left: 50px;
-	margin-top: -80px;
+	padding-top: 140px;
+	margin-top: 0;
 }
 .about-link {
 	color: lightblue;
 }
 .about-link:hover {
-	color: darkblue;
+	color: gray;
 }
 #contact {
 	height: 10vh;
@@ -262,7 +228,276 @@ a:hover {
     -moz-transition:.3s;
     -webkit-transition:.3s;
     transition:.3s;
-}
-.footer-social:first-of-type {
 	padding-left: 20px;
+}
+#contact-text {
+	float: right;
+	margin-top: -35px;
+	padding-right: 20px;
+	font-size: 24px;
+	font-weight: 100;
+	color: #2e4562;
+}
+#contact-text:hover {
+	color: lightblue;
+}
+
+
+/* Responsiveness! */
+/* iPad Wide*/
+@media screen and (min-width: 1024px) and (max-width: 1198px) {
+	#home {
+		height: 68vh;
+	}
+	#page-head {
+		padding-left: 60px;
+		font-size: 100px;
+		line-height: 4.6;
+	}
+	#socials {
+	    margin-top: -170px;
+	}
+	#news-title {
+		font-size: 100px;
+	}
+	#bio-title, #music-title {
+		font-size: 420px;
+	}
+	#music-head-contain, #bio-head-contain {
+		height: 400px;
+	}
+	#about {
+		background-position: -250px;
+	}
+	#about-text {
+		padding-top: 70px;
+	}
+}
+
+/* iPad Tall*/
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+	#home {
+		height: 38vh;
+	}
+	#page-head {
+		padding-left: 25px;
+		font-size: 80px;
+		line-height: 4.3;
+	}
+	#socials {
+	    margin-top: -130px;
+	}
+	#news {
+		height: 42vh;
+	}
+	#news-head {
+		padding-top: 120px;
+	}
+	#news-title {
+		font-size: 100px;
+	}
+	#bio-title, #music-title {
+		font-size: 320px;
+	}
+	#music-head-contain, #bio-head-contain {
+		height: 300px;
+	}
+	#music {
+		height: 122vh;
+	}
+	#about {
+		background-position: -850px;
+	}
+	#about-text {
+		padding-top: 105px;
+		margin-left: 30px;
+	}
+	#contact {
+		height: 10vh;
+	}
+	.footer-social {
+		margin-top: 30px;
+	}
+}
+
+/* Mobile Small - iPhone 5, etc. */
+@media screen and (max-width: 320px) {
+	#home {
+		height: 29vh;
+	}
+	#page-head {
+		padding-left: 7px;
+		font-size: 34px;
+		line-height: 3.8;
+	}
+	#main-nav {
+		padding-left: 20px;
+	}
+	#small-nav {
+		display: none;
+	}
+	#socials {
+	    margin-top: -30px;
+	}
+	#news {
+		height: 52vh;
+	}
+	#news-head {
+		padding-top: 80px;
+	}
+	#news-title {
+		font-size: 60px;
+	}
+	#bio-title, #music-title {
+		font-size: 130px;
+	}
+	#music-head-contain, #bio-head-contain {
+		height: 160px;
+	}
+	#music {
+		height: 220.4vh;
+	}
+	#about {
+		background-position: -850px;
+		height: 92vh;
+	}
+	#about-text {
+		padding-top: 60px;
+		margin-left: 10px;
+		width: 95%;
+		font-size: 16.6px;
+	}
+	#contact {
+		height: 8vh;
+	}
+	#contact-text {
+		color: lightblue;
+		margin-top: -91px;
+		padding-right: 90px;
+	}
+	.footer-social {
+		margin-top: 3px;
+		padding-left: 17px;
+	}
+}
+
+/* Mobile Large - iPhone Plus sizes, etc. */
+@media screen and (min-width: 376px) and (max-width: 414px) {
+	#home {
+		height: 29vh;
+	}
+	#page-head {
+		padding-left: 3px;
+		font-size: 45px;
+		line-height: 3.8;
+	}
+	#main-nav {
+		padding-left: 65px;
+	}
+	#small-nav {
+		display: none;
+	}
+	#socials {
+	    margin-top: -56px;
+	}
+	#news {
+		height: 52vh;
+	}
+	#news-head {
+		padding-top: 120px;
+	}
+	#news-title {
+		font-size: 70px;
+	}
+	#bio-title, #music-title {
+		font-size: 170px;
+	}
+	#music-head-contain, #bio-head-contain {
+		height: 200px;
+	}
+	#music {
+		height: 170vh;
+	}
+	#about {
+		background-position: -850px;
+	}
+	#about-text {
+		padding-top: 60px;
+		margin-left: 20px;
+		width: 93%;
+		font-size: 21px;
+	}
+	#contact {
+		height: 10vh;
+	}
+	#contact-text {
+		color: lightblue;
+		margin-top: -115px;
+		padding-right: 135px;
+	}
+	.footer-social {
+		margin-top: 20px;
+		padding-left: 33px;
+	}
+}
+
+/* Mobile Regular - iPhone 6, etc. */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+	#home {
+		height: 29vh;
+	}
+	#page-head {
+		padding-left: 6px;
+		font-size: 40px;
+		line-height: 3.8;
+	}
+	#main-nav {
+		padding-left: 50px;
+	}
+	#small-nav {
+		display: none;
+	}
+	#socials {
+	    margin-top: -50px;
+	}
+	#news {
+		height: 52vh;
+	}
+	#news-head {
+		padding-top: 100px;
+	}
+	#news-title {
+		font-size: 70px;
+	}
+	#bio-title, #music-title {
+		font-size: 150px;
+	}
+	#music-head-contain, #bio-head-contain {
+		height: 180px;
+	}
+	#music {
+		height: 187.5vh;
+	}
+	#about {
+		background-position: -850px;
+		height: 92vh;
+	}
+	#about-text {
+		padding-top: 60px;
+		margin-left: 10px;
+		width: 95%;
+		font-size: 19.5px;
+	}
+	#contact {
+		height: 8vh;
+	}
+	#contact-text {
+		color: lightblue;
+		margin-top: -100px;
+		padding-right: 115px;
+	}
+	.footer-social {
+		margin-top: 8px;
+		padding-left: 26px;
+	}
 }
