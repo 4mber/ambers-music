@@ -15,58 +15,71 @@ $(function() {
 });	
 
 
-// Responsive Nav Update
-if ($(window).width() > 415) {
-  function update() {
-      if ($(window).scrollTop() > 200) {
-          $('#page-head').animate({
-              "font-size": '36px'
-          }, 100);
-      } else {
-          $('#page-head').animate({
-              "font-size": '70px'
-          }, 100);
-      }
-  }
-  setInterval(update, 500);
-}
-else {
-}
-if ($(window).width() > 415) {
-  function update() {
-      if ($(window).scrollTop() > 200) {
-          $('#main-nav').animate({
-              "opacity": '0.0'
-          }, 100);
-      } else {
-          $('#main-nav').animate({
-              "opacity": '1.0'
-          }, 100);
-      }
-  }
-  setInterval(update, 500);
-}
-else {
-}
-if ($(window).width() > 415) {
-  function update() {
-      if ($(window).scrollTop() > 200) {
-          $('#small-nav').animate({
-              "opacity": '1.0'
-          }, 100);
-      } else {
-          $('#small-nav').animate({
-              "opacity": '0.0'
-          }, 100);
-      }
-  }
-  setInterval(update, 500);
-}
-else {
-}
-
-
-// Animated down arrow
-$(window).scroll(function() {
-  $('.arrows').fadeOut( "slow", function() {});
+// Nav Scroll Update
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("#nav-contain");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
 });
+if ($(window).width() > 415) {
+  function update() {
+      if ($(window).scrollTop() > 1100 && $(window).scrollTop() < 3400) {
+          $('#small-socials').animate({
+              "opacity": '1.0'
+          }, 100);
+      }
+      else {
+          $('#small-socials').animate({
+              "opacity": '0.0'
+          }, 100);
+      }
+  }
+  setInterval(update, 500);
+}
+else {
+}
+
+
+// Responsive Music/Bio Head Switcher
+
+if ($(window).width() > 1000) {
+  function update() {
+      if ($(window).scrollTop() > 1700) {
+          $('#bio-title').animate({
+              "opacity": '1.0'
+          }, 100);
+          $('#music-title').animate({
+                "opacity": '0.0'
+          }, 100);
+      } else {
+          $('#bio-title').animate({
+              "opacity": '0.0'
+          }, 100);
+          $('#music-title').animate({
+                "opacity": '1.0'
+          }, 100);
+      }
+  }
+  setInterval(update, 100);
+}
+else {
+      function update() {
+      if ($(window).scrollTop() > 1300) {
+          $('#bio-title').animate({
+              "opacity": '1.0'
+          }, 100);
+          $('#music-title').animate({
+                "opacity": '0.0'
+          }, 100);
+      } else {
+          $('#bio-title').animate({
+              "opacity": '0.0'
+          }, 100);
+          $('#music-title').animate({
+                "opacity": '1.0'
+          }, 100);
+      }
+  }
+  setInterval(update, 100);
+}
