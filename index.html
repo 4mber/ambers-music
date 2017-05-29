@@ -94,12 +94,16 @@
 	<script src="js/script.js" type="text/javascript" async></script>
 
 	<script type="text/javascript">
-		//Background Image Fader
+		//Resposive Background Image Fader
+		if ($(window).width() > 1025) {
 		$("#home").bgswitcher({
 		  images: ["images/BGnew.png", "images/BGtrans1.png", "images/BGnewer.png", "images/BGtrans2.png"],
 		  interval: 3000,
 		  duration: 3000
 		});
+		} else {
+		$("#home").css('background-image', 'url("images/BGnew.png")');
+		}
 	</script>
 
 </body>
