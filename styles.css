@@ -99,7 +99,7 @@ a:hover {
 		  rgba(255, 255, 255, 0.1),
 		  rgba(255, 255, 255, 0.9)
 	),
-	url('images/LeighLiamcolor.png');
+	url('images/LeighLiamcolor.jpg');
 	background-size: cover;
     background-position: top;background-attachment: fixed;
     -webkit-box-shadow: inset 0px 9px 25px -18px black;
@@ -190,7 +190,7 @@ a:hover {
       rgba(4, 33, 62, 0.64), 
       rgba(4, 33, 62, 0.64)
     ),
-    url('images/aboutBG.png');
+    url('images/aboutBG.jpg');
     background-size: cover;
   	background-attachment: fixed;
   	-webkit-box-shadow: inset 0px 9px 25px -18px black;
