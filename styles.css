@@ -11,7 +11,7 @@ nav {
 }
 a {
 	text-decoration: none;
-	color: white;
+	color: #FFF;
 	-o-transition:.3s;
     -ms-transition:.3s;
     -moz-transition:.3s;
@@ -20,27 +20,21 @@ a {
     cursor: pointer;
     font-weight: 100;
 }
-a:hover {
-	color: lightblue;
-}
+a:hover { color: #ADD8E6; }
 #home {
 	background-size: cover;
+	background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: top;
+    background-position: bottom;
 	height: 750px;
 	-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
  	-moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
   	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
 }
-.thick {
-	font-weight: 300;
-}
+.thick { font-weight: 300; }
 #page-head {
 	font-size: 110px;
-	width: 100%;
-	text-align: center;
-	color: white;
-	padding-left: 13%;
+	color: #FFF;
 	line-height: 6.3;
 }
 .social-icon {
@@ -52,12 +46,10 @@ a:hover {
     -webkit-transition:.3s;
     transition:.3s;
 }
-.social-icon:first-of-type {
-	padding-left: 2px;
-}
-.social-icon:hover, .footer-social:hover {
-	filter: opacity(95%);
-}
+.social-icon:first-of-type { padding-left: 2px; }
+.social-icon:hover,
+.footer-social:hover
+{ filter: opacity(95%); }
 #nav-contain {
 	width: 100%;
 	height: 40px;
@@ -68,24 +60,21 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.1) !important;
   transition: background-color 200ms linear;
 }
-.nav-item {
-	font-size: 20px;
-}
+.nav-item { font-size: 20px; }
 .slash {
-	color: white;
-	padding-left: 10px;
-	padding-right: 5px;
+	color: #FFF;
+	padding: 0 5px 0 10px;
 }
-#main-nav {
-	padding-left: 15px;
-}
+#main-nav { padding-left: 15px; }
 #small-nav {
 	width: 50%;
     text-align: right;
-    margin-left: 0;
-    margin-right: 20px;
+    margin: -27px 20px 0 0;
     float: right;
-    margin-top: -27px;
+}
+#header {
+	width: 100%;
+    text-align: center;
 }
 #socials {
 	width: 100%;
@@ -96,8 +85,8 @@ a:hover {
 	height: 50vh;
 	background:
 	linear-gradient(
-		  rgba(255, 255, 255, 0.1),
-		  rgba(255, 255, 255, 0.9)
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0.9)
 	),
 	url('images/LeighLiamcolor.jpg');
 	background-size: cover;
@@ -127,18 +116,10 @@ a:hover {
     transition:.3s;
 	color: #2e4562;
 }
-#news-title:hover {
-	color: lightblue;
-}
+#news-title:hover { color: #ADD8E6; }
 #ll-socials {
 	width: 150px;
 	margin: auto;
-}
-#music-head-contain, #bio-head-contain {
-	height: 600px;
-	-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
- 	-moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
-  	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
 }
 #music {
 	height: 100%;
@@ -146,43 +127,24 @@ a:hover {
  	-moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
   	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
 }
-#soundcloud {
-	margin-top: 300px;
-}
-#soundcloud, #youtube {
+#soundcloud { margin-top: 300px; }
+#soundcloud,
+#youtube {
 	width: 100%;
 	margin: auto;
-}
-#scroll-out {
-	position: fixed;
-    top: 200px;
-    z-index: -10;
-    width: 100%;
-    margin: auto;
-}
-#music-title, #bio-title {
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;
-	font-size: 600px;
-	color: rgba(173, 216, 230, 0.65);
-	font-weight: 100;
-	z-index: -100;
-	overflow: hidden;
 }
 .more-link {
 	width: 100%;
 	height: 50px;
 	font-size: 24px;
 	background-color: #26475f;
-	color: white;
+	color: #FFF;
 	cursor: pointer;
 	font-weight: 100;
 	border: none;
 	padding-top: 0;
 	margin-top: -3px;
 }
-
 #about {
 	height: 90vh;
 	background:  
@@ -198,23 +160,18 @@ a:hover {
   	box-shadow: inset 0px 9px 25px -18px black;
 }
 #about-text {
-	color: white;
+	color: #FFF;
 	font-size: 28px;
 	font-weight: 100;
 	width: 60%;
-	margin-left: 50px;
+	margin: 0 0 0 50px;
 	padding-top: 140px;
-	margin-top: 0;
 }
-.about-link {
-	color: lightblue;
-}
-.about-link:hover {
-	color: gray;
-}
+.about-link { color: #ADD8E6; }
+.about-link:hover { color: #808080; }
 #contact {
 	height: 10vh;
-	background-color: white;
+	background-color: #FFF;
 	-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
  	-moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
   	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
@@ -238,125 +195,58 @@ a:hover {
 	font-weight: 100;
 	color: #2e4562;
 }
-#contact-text:hover {
-	color: lightblue;
-}
+#contact-text:hover { color: #ADD8E6; }
 
 
 /* Responsiveness! */
 /* iPad Wide*/
 @media screen and (min-width: 1024px) and (max-width: 1198px) {
-	#home {
-		height: 68vh;
-	}
+	#home { height: 68vh; }
 	#page-head {
-		padding-left: 60px;
 		font-size: 100px;
 		line-height: 4.6;
 	}
-	#socials {
-	    margin-top: -170px;
-	}
-	#news-title {
-		font-size: 100px;
-	}
-	#bio-title, #music-title {
-		font-size: 420px;
-	}
-	#music-head-contain, #bio-head-contain {
-		height: 400px;
-	}
-	#about {
-		background-position: -250px;
-	}
-	#about-text {
-		padding-top: 70px;
-	}
+	#socials { margin-top: -170px; }
+	#news-title { font-size: 100px; }
+	#about { background-position: -250px; }
+	#about-text { padding-top: 70px; }
 }
 
 /* iPad Tall*/
 @media screen and (min-width: 415px) and (max-width: 1023px) {
-	#home {
-		height: 38vh;
-	}
+	#home { height: 38vh; }
 	#page-head {
-		padding-left: 25px;
 		font-size: 80px;
 		line-height: 4.3;
 	}
-	#socials {
-	    margin-top: -130px;
-	}
-	#news {
-		height: 42vh;
-	}
-	#news-head {
-		padding-top: 120px;
-	}
-	#news-title {
-		font-size: 100px;
-	}
-	#bio-title, #music-title {
-		font-size: 320px;
-	}
-	#music-head-contain, #bio-head-contain {
-		height: 300px;
-	}
-	#music {
-		height: 122vh;
-	}
-	#about {
-		background-position: -800px;
-	}
+	#socials { margin-top: -130px; }
+	#news { height: 42vh; }
+	#news-head { padding-top: 120px; }
+	#news-title { font-size: 100px; }
+	#music { height: 122vh; }
+	#about { background-position: -800px; }
 	#about-text {
 		padding-top: 105px;
 		margin-left: 30px;
 	}
-	#contact {
-		height: 10vh;
-	}
-	.footer-social {
-		margin-top: 30px;
-	}
+	#contact { height: 10vh; }
+	.footer-social { margin-top: 30px; }
 }
 
 /* Mobile Small - iPhone 5, etc. */
 @media screen and (max-width: 320px) {
-	#home {
-		height: 29vh;
-	}
+	#home { height: 29vh; }
 	#page-head {
-		padding-left: 7px;
 		font-size: 34px;
 		line-height: 3.8;
 	}
-	#main-nav {
-		padding-left: 20px;
-	}
-	#small-nav {
-		display: none;
-	}
-	#socials {
-	    margin-top: -30px;
-	}
-	#news {
-		height: 52vh;
-	}
-	#news-head {
-		padding-top: 80px;
-	}
-	#news-title {
-		font-size: 60px;
-	}
-	#bio-title, #music-title {
-		font-size: 130px;
-	}
-	#music-head-contain, #bio-head-contain {
-		height: 160px;
-	}
-	#music {
-		height: 220.4vh;
-	}
+	#main-nav { padding-left: 20px; }
+	#small-nav { display: none; }
+	#socials { margin-top: -30px; }
+	#news { height: 52vh; }
+	#news-head { padding-top: 80px; }
+	#news-title { font-size: 60px; }
+	#music { height: 220.4vh; }
 	#about {
 		background-position: -800px;
 		height: 105vh;
@@ -367,11 +257,9 @@ a:hover {
 		width: 95%;
 		font-size: 16.6px;
 	}
-	#contact {
-		height: 8vh;
-	}
+	#contact { height: 8vh; }
 	#contact-text {
-		color: lightblue;
+		color: #ADD8E6;
 		margin-top: -91px;
 		padding-right: 90px;
 	}
@@ -383,55 +271,28 @@ a:hover {
 
 /* Mobile Large - iPhone Plus sizes, etc. */
 @media screen and (min-width: 376px) and (max-width: 414px) {
-	#home {
-		height: 29vh;
-	}
+	#home { height: 29vh; }
 	#page-head {
-		padding-left: 3px;
 		font-size: 45px;
 		line-height: 3.8;
 	}
-	#main-nav {
-		padding-left: 65px;
-	}
-	#small-nav {
-		display: none;
-	}
-	#socials {
-	    margin-top: -56px;
-	}
-	#news {
-		height: 52vh;
-	}
-	#news-head {
-		padding-top: 120px;
-	}
-	#news-title {
-		font-size: 70px;
-	}
-	#bio-title, #music-title {
-		font-size: 170px;
-	}
-	#music-head-contain, #bio-head-contain {
-		height: 200px;
-	}
-	#music {
-		height: 170vh;
-	}
-	#about {
-		background-position: -800px;
-	}
+	#main-nav { padding-left: 65px; }
+	#small-nav { display: none; }
+	#socials { margin-top: -56px; }
+	#news { height: 52vh; }
+	#news-head { padding-top: 120px; }
+	#news-title { font-size: 70px; }
+	#music { height: 170vh; }
+	#about { background-position: -800px; }
 	#about-text {
 		padding-top: 60px;
 		margin-left: 20px;
 		width: 93%;
 		font-size: 21px;
 	}
-	#contact {
-		height: 10vh;
-	}
+	#contact { height: 10vh; }
 	#contact-text {
-		color: lightblue;
+		color: #ADD8E6;
 		margin-top: -115px;
 		padding-right: 135px;
 	}
@@ -443,41 +304,18 @@ a:hover {
 
 /* Mobile Regular - iPhone 6, etc. */
 @media screen and (min-width: 321px) and (max-width: 375px) {
-	#home {
-		height: 29vh;
-	}
+	#home { height: 29vh; }
 	#page-head {
-		padding-left: 6px;
 		font-size: 40px;
 		line-height: 3.8;
 	}
-	#main-nav {
-		padding-left: 50px;
-	}
-	#small-nav {
-		display: none;
-	}
-	#socials {
-	    margin-top: -50px;
-	}
-	#news {
-		height: 52vh;
-	}
-	#news-head {
-		padding-top: 100px;
-	}
-	#news-title {
-		font-size: 70px;
-	}
-	#bio-title, #music-title {
-		font-size: 150px;
-	}
-	#music-head-contain, #bio-head-contain {
-		height: 180px;
-	}
-	#music {
-		height: 187.5vh;
-	}
+	#main-nav { padding-left: 50px; }
+	#small-nav { display: none; }
+	#socials { margin-top: -50px; }
+	#news { height: 52vh; }
+	#news-head { padding-top: 100px; }
+	#news-title { font-size: 70px; }
+	#music { height: 187.5vh; }
 	#about {
 		background-position: -800px;
 		height: 110vh;
@@ -488,11 +326,9 @@ a:hover {
 		width: 95%;
 		font-size: 19.5px;
 	}
-	#contact {
-		height: 8vh;
-	}
+	#contact { height: 8vh; }
 	#contact-text {
-		color: lightblue;
+		color: #ADD8E6;
 		margin-top: -100px;
 		padding-right: 115px;
 	}

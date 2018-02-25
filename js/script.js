@@ -43,43 +43,43 @@ else {
 
 // Responsive Music/Bio Head Switcher
 
-if ($(window).width() > 1000) {
-  function update() {
-      if ($(window).scrollTop() > 1700) {
-          $('#bio-title').animate({
-              "opacity": '1.0'
-          }, 100);
-          $('#music-title').animate({
-                "opacity": '0.0'
-          }, 100);
-      } else {
-          $('#bio-title').animate({
-              "opacity": '0.0'
-          }, 100);
-          $('#music-title').animate({
-                "opacity": '1.0'
-          }, 100);
-      }
-  }
-  setInterval(update, 100);
-}
-else {
-      function update() {
-      if ($(window).scrollTop() > 1300) {
-          $('#bio-title').animate({
-              "opacity": '1.0'
-          }, 100);
-          $('#music-title').animate({
-                "opacity": '0.0'
-          }, 100);
-      } else {
-          $('#bio-title').animate({
-              "opacity": '0.0'
-          }, 100);
-          $('#music-title').animate({
-                "opacity": '1.0'
-          }, 100);
-      }
-  }
-  setInterval(update, 100);
-}
+// if ($(window).width() > 1000) {
+//   function update() {
+//       if ($(window).scrollTop() > 1700) {
+//           $('#bio-title').animate({
+//               "opacity": '1.0'
+//           }, 100);
+//           $('#music-title').animate({
+//                 "opacity": '0.0'
+//           }, 100);
+//       } else {
+//           $('#bio-title').animate({
+//               "opacity": '0.0'
+//           }, 100);
+//           $('#music-title').animate({
+//                 "opacity": '1.0'
+//           }, 100);
+//       }
+//   }
+//   setInterval(update, 100);
+// }
+// else {
+//       function update() {
+//       if ($(window).scrollTop() > 1300) {
+//           $('#bio-title').animate({
+//               "opacity": '1.0'
+//           }, 100);
+//           $('#music-title').animate({
+//                 "opacity": '0.0'
+//           }, 100);
+//       } else {
+//           $('#bio-title').animate({
+//               "opacity": '0.0'
+//           }, 100);
+//           $('#music-title').animate({
+//                 "opacity": '1.0'
+//           }, 100);
+//       }
+//   }
+//   setInterval(update, 100);
+// }
