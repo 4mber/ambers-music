@@ -417,7 +417,7 @@ img {
     top: 0;
     left: 0;
     opacity: 0;
-/*     width: 600px; */
+    width: 600px;
     transition: opacity 0.3s ease-in-out;
   }
   
@@ -425,7 +425,7 @@ img {
     padding-top: 6px;
     margin: 6px;
     display: block;
-/*     width: 140px; */
+    width: 140px;
   }
   
 .gallery__selector {
