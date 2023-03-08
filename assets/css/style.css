@@ -394,12 +394,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 # Gallery
 --------------------------------------------------------------*/
 
-* {
-  box-sizing: border-box;
-}
-
-$max-img-width: 600px;
-$max-img-height: 400px;
 
 img {
   max-width: 100%;
@@ -409,15 +403,16 @@ img {
 .gallery {
   display: flex;
     margin: 10px auto;
-    max-width: $max-img-width;
+    max-width: 600px;
     position: relative;
-    padding-top: $max-img-height/$max-img-width * 100%;
+    padding-top: 1.5px;
     
     @media screen and (min-width: $max-img-width){
       padding-top: $max-img-height;
     }
+}
   
-  &__img {
+.gallery__img {
     position: absolute;
     top: 0;
     left: 0;
@@ -426,19 +421,19 @@ img {
     transition: opacity 0.3s ease-in-out;
   }
   
-   &__thumb {
+.gallery__thumb {
     padding-top: 6px;
     margin: 6px;
     display: block;
 /*     width: 140px; */
   }
   
-  &__selector {
+.gallery__selector {
     position: absolute;
     opacity: 0;
     visibility: hidden;
     
-    &:checked {
+.gallery:checked {
       + .gallery__img {
         opacity: 1;
       }
