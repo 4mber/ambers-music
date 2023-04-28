@@ -180,6 +180,14 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   background: #000;
 }
 
+.listen {
+  display: inline;
+  padding-right: 15px;
+}
+.icon-size {
+  font-size: 22px;
+}
+
 .testimonials-slider .swiper-pagination {
   margin-top: -60px;
   position: relative;
@@ -377,6 +385,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: relative;
   text-align: center;
   color: #fff;
+  padding-top: 8px;
 }
 .social a span {
   display: inline-block;
